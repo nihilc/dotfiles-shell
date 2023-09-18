@@ -10,3 +10,6 @@ alias lla="ls -lA"
 alias tree="tree -C --dirsfirst"
 
 alias bat="batcat"
+
+# Fix paths
+alias wget="wget --hsts-file=$XDG_DATA_HOME/wget-hsts"
