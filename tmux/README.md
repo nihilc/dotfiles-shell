@@ -1,19 +1,15 @@
 # Tmux config
 
-## Keybindings
-
-Prefix key: **`<C-z>`**
-
-I remap most of the default bindings of tmux, in the next tables I show the new **Bind** and the **Unbind** that It replace with a **Description**
+## Bindings
 
 ### Basic
 
 |   Bind    | Unbind  | Description               |
 | :-------: | :-----: | :------------------------ |
 |  `<C-z>`  | `<C-b>` | Send the prefix key       |
-| `<C-M-R>` |   N/A   | Reload config             |
-|    `:`    |   N/A   | Command prompt            |
-|    `?`    |   N/A   | List default key bindings |
+| `<C-M-R>` |         | Reload config             |
+|    `:`    |         | Command prompt            |
+|    `?`    |         | List default key bindings |
 
 ### Panes
 
@@ -49,21 +45,21 @@ I remap most of the default bindings of tmux, in the next tables I show the new 
 
 |    Bind     | Unbind | Description             |
 | :---------: | :----: | :---------------------- |
-|   `<M-1>`   |  N/A   | Layout: even-horizontal |
-|   `<M-2>`   |  N/A   | Layout: even-vertical   |
-|   `<M-3>`   |  N/A   | Layout: main-horizontal |
-|   `<M-4>`   |  N/A   | Layout: main-vertical   |
-|   `<M-5>`   |  N/A   | Layout: tiled           |
-|  `<Space>`  |  N/A   | Next layout             |
-| `<C-Space>` |  N/A   | Prev layout             |
+|   `<M-1>`   |        | Layout: even-horizontal |
+|   `<M-2>`   |        | Layout: even-vertical   |
+|   `<M-3>`   |        | Layout: main-horizontal |
+|   `<M-4>`   |        | Layout: main-vertical   |
+|   `<M-5>`   |        | Layout: tiled           |
+|  `<Space>`  |        | Next layout             |
+| `<C-Space>` |        | Prev layout             |
 | `<M-Space>` |  `E`   | Spread panes evenly     |
 
 #### Pane management
 
 | Bind | Unbind | Description              |
 | :--: | :----: | ------------------------ |
-| `z`  |  N/A   | Zoom pane                |
-| `!`  |  N/A   | Break pane in new window |
+| `z`  |        | Zoom pane                |
+| `!`  |        | Break pane in new window |
 | `s`  |  `"`   | Split horizontal         |
 | `v`  |  `%`   | Split vertical           |
 | `x`  |  `x`   | Kill pane                |
@@ -74,23 +70,24 @@ I remap most of the default bindings of tmux, in the next tables I show the new 
 
 |  Bind   | Unbind  | Description            |
 | :-----: | :-----: | :--------------------- |
-| `[0-9]` |   N/A   | Select windows 0-9     |
+| `[0-9]` |         | Select windows 0-9     |
 |   `'`   |   `w`   | Choose window          |
 |   `\`   |   `l`   | Last window            |
 |   `[`   |   `p`   | Prev window            |
 |   `]`   |   `n`   | Next window            |
 | `<C-[>` | `<M-p>` | Prev window with alert |
 | `<C-]>` | `<M-n>` | Next window with alert |
-|   `{`   |   N/A   | Swap with prev window  |
-|   `}`   |   N/A   | Swap with next window  |
+|   `{`   |         | Swap with prev window  |
+|   `}`   |         | Swap with next window  |
 
 #### Window management
 
-| Bind | Unbind | Description   |
-| :--: | :----: | :------------ |
-| `r`  |  `,`   | Rename window |
-| `c`  |  N/A   | New window    |
-| `X`  |  `&`   | Kill window   |
+|  Bind   | Unbind | Description            |
+| :-----: | :----: | :--------------------- |
+|   `r`   |  `,`   | Rename window          |
+|   `c`   |        | New window in same dir |
+| `<C-c>` |        | New window in $HOME    |
+|   `X`   |  `&`   | Kill window            |
 
 ### Sessions
 
@@ -108,8 +105,8 @@ I remap most of the default bindings of tmux, in the next tables I show the new 
 |  Bind   | Unbind  | Description    |
 | :-----: | :-----: | :------------- |
 | `<M-r>` |   `$`   | Rename session |
-| `<M-c>` |   N/A   | New session    |
-| `<M-x>` |   N/A   | Kill session   |
+| `<M-c>` |         | New session    |
+| `<M-x>` |         | Kill session   |
 | `<M-d>` | `<C-d>` | Detach client  |
 | `<M-z>` | `<C-z>` | Suspend client |
 
@@ -120,7 +117,7 @@ I remap most of the default bindings of tmux, in the next tables I show the new 
 | `<C-v>` |  `[`   | Enter copy mode   |
 |   `p`   |  `]`   | Paste last buffer |
 |   `-`   |  `#`   | List buffers      |
-|   `=`   |  N/A   | Choose buffer     |
+|   `=`   |        | Choose buffer     |
 
 ### Removed bindings
 
