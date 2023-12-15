@@ -60,17 +60,17 @@ I remap most of the default bindings of tmux, in the next tables I show the new 
 
 #### Pane management
 
-| Bind  | Unbind | Description              |
-| :---: | :----: | ------------------------ |
-|  `z`  |  N/A   | Zoom pane                |
-|  `!`  |  N/A   | Break pane in new window |
-|  `s`  |  `"`   | Split horizontal         |
-|  `v`  |  `%`   | Split vertical           |
-|  `x`  |  `x`   | Kill pane                |
+| Bind | Unbind | Description              |
+| :--: | :----: | ------------------------ |
+| `z`  |  N/A   | Zoom pane                |
+| `!`  |  N/A   | Break pane in new window |
+| `s`  |  `"`   | Split horizontal         |
+| `v`  |  `%`   | Split vertical           |
+| `x`  |  `x`   | Kill pane                |
 
 ### Windows
 
-#### Window select
+#### Window select / move
 
 |  Bind   | Unbind  | Description            |
 | :-----: | :-----: | :--------------------- |
@@ -81,14 +81,16 @@ I remap most of the default bindings of tmux, in the next tables I show the new 
 |   `]`   |   `n`   | Next window            |
 | `<C-[>` | `<M-p>` | Prev window with alert |
 | `<C-]>` | `<M-n>` | Next window with alert |
+|   `{`   |   N/A   | Swap with prev window  |
+|   `}`   |   N/A   | Swap with next window  |
 
 #### Window management
 
-| Bind  | Unbind | Description   |
-| :---: | :----: | :------------ |
-|  `r`  |  `,`   | Rename window |
-|  `c`  |  N/A   | New window    |
-|  `X`  |  `&`   | Kill window   |
+| Bind | Unbind | Description   |
+| :--: | :----: | :------------ |
+| `r`  |  `,`   | Rename window |
+| `c`  |  N/A   | New window    |
+| `X`  |  `&`   | Kill window   |
 
 ### Sessions
 
@@ -110,7 +112,6 @@ I remap most of the default bindings of tmux, in the next tables I show the new 
 | `<M-x>` |   N/A   | Kill session   |
 | `<M-d>` | `<C-d>` | Detach client  |
 | `<M-z>` | `<C-z>` | Suspend client |
-
 
 ### Buffers
 
