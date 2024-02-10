@@ -2,7 +2,8 @@
 
 alias zshrc-source="source $ZDOTDIR/.zshrc"
 
-alias ls="ls -Fv --color --group-directories-first"
+# alias ls="ls -Fv --color --group-directories-first"
+alias ls="lsd -Fv --color=always --group-directories-first"
 alias la="ls -A"
 alias lls="ls -l"
 alias lla="ls -lA"
