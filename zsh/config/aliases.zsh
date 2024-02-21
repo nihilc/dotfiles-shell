@@ -9,6 +9,7 @@ alias lls="ls -l"
 alias lla="ls -lA"
 
 alias tree="tree -C --dirsfirst"
+alias rm="rm -i"
 
 alias bat="batcat"
 
