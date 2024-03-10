@@ -48,4 +48,4 @@ vim.opt.spelloptions = "camel"  -- fix camelCase spell
 vim.opt.spelllang = { "en" }    -- Spell language
 
 vim.opt.list = true
-vim.opt.listchars = { eol = "¬", tab = "» ", trail = "•", nbsp = "␣", extends = "▶" }
+vim.opt.listchars = { eol = "¬", tab = "➔ ", trail = "•", nbsp = "␣", extends = "▶", precedes = "◀" }
