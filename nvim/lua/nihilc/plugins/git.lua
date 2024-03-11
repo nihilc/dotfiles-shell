@@ -26,7 +26,17 @@ return {
   {
     "lewis6991/gitsigns.nvim",
     lazy = false,
-    opts = {},
+    opts = {
+      signs = {
+        add = { text = '+' },
+        change = { text = '~' },
+        delete = { text = '_' },
+        topdelete = { text = '‾' },
+        changedelete = { text = '~' },
+        untracked = { text = '±' },
+      },
+      attach_to_untracked = true,
+    },
     keys = {
       { "]g", function() vim.cmd("Gitsigns next_hunk") end, desc = "Git next hunk" },
       { "[g", function() vim.cmd("Gitsigns prev_hunk") end, desc = "Git prev hunk" },
