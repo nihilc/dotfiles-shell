@@ -47,5 +47,10 @@ vim.opt.spell = true            -- enable spell
 vim.opt.spelloptions = "camel"  -- fix camelCase spell
 vim.opt.spelllang = { "en" }    -- Spell language
 
+vim.o.foldmethod = "expr"     -- Use expr to fold
+vim.o.foldenable = false      -- disable folding at startup
+vim.o.foldlevelstart = 99     -- disable folding at startup
+vim.o.foldexpr = "nvim_treesitter#foldexpr()" -- use tree-sitter to fold
+
 vim.opt.list = true
 vim.opt.listchars = { eol = "¬", tab = "➔ ", trail = "•", nbsp = "␣", extends = "▶", precedes = "◀" }
