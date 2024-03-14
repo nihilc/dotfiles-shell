@@ -35,10 +35,23 @@ return {
         untracked = { text = '±' },
       },
       attach_to_untracked = true,
+      on_attach = function(bufnr)
+        local gs = package.loaded.gitsigns
+
+        vim.keymap.set('n', ']c', function()
+          if vim.wo.diff then return ']c' end
+          vim.schedule(function() gs.next_hunk() end)
+          return '<Ignore>'
+        end, { buffer = burnr, expr = true, desc = "Git next hunk" })
+
+        vim.keymap.set('n', '[c', function()
+          if vim.wo.diff then return '[c' end
+          vim.schedule(function() gs.prev_hunk() end)
+          return '<Ignore>'
+        end, { buffer = burnr, expr = true, desc = "Git prev hunk" })
+      end
     },
     keys = {
-      { "]g", function() vim.cmd("Gitsigns next_hunk") end, desc = "Git next hunk" },
-      { "[g", function() vim.cmd("Gitsigns prev_hunk") end, desc = "Git prev hunk" },
       { "<leader>ga", function() vim.cmd("Gitsigns stage_hunk") end, desc = "Git stage hunk" },
       { "<leader>gA", function() vim.cmd("Gitsigns stage_buffer") end, desc = "Git stage buffer" },
       { "<leader>gr", function() vim.cmd("Gitsigns reset_hunk") end, desc = "Git reset hunk" },
