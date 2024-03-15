@@ -1,6 +1,6 @@
 -- General
 vim.keymap.set("n", "<esc>", "<cmd>nohlsearch<cr>", { desc = "Clear search highlight" })
-vim.keymap.set({ "n", "i", "v" }, "<c-s>", "<cmd>w<cr>", { desc = "Save" })
+vim.keymap.set({ "n", "i" }, "<c-s>", "<cmd>w<cr>", { desc = "Save File" })
 
 vim.keymap.set("t", "<esc><esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
@@ -23,12 +23,6 @@ vim.keymap.set("n", "N", "Nzzzv", { desc = "keep screen centered when jump prev"
 -- Edition
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move selected lines down" })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move selected lines up" })
-
--- Diagnostics
-vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Prev Diagnostic message" })
-vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Next Diagnostic message" })
-vim.keymap.set("n", "<leader>de", vim.diagnostic.open_float, { desc = "Show diagnostic Error messages" })
-vim.keymap.set("n", "<leader>dq", vim.diagnostic.setloclist, { desc = "Open diagnostic Quick fix list" })
 
 -- UI
 vim.keymap.set("n", "<leader>uw", "<cmd>set wrap!<cr>", { desc = "UI Toggle wrap" })

@@ -42,13 +42,13 @@ return {
           if vim.wo.diff then return ']c' end
           vim.schedule(function() gs.next_hunk() end)
           return '<Ignore>'
-        end, { buffer = burnr, expr = true, desc = "Git next hunk" })
+        end, { buffer = burnr, expr = true, desc = "Next Git hunk" })
 
         vim.keymap.set('n', '[c', function()
           if vim.wo.diff then return '[c' end
           vim.schedule(function() gs.prev_hunk() end)
           return '<Ignore>'
-        end, { buffer = burnr, expr = true, desc = "Git prev hunk" })
+        end, { buffer = burnr, expr = true, desc = "Prev Git hunk" })
       end
     },
     keys = {

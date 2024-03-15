@@ -62,6 +62,7 @@ return {
             ["<up>"] = false,
           },
           n = {
+            ["<m-p>"] = require("telescope.actions.layout").toggle_preview,
             ["<down>"] = false,
             ["<up>"] = false,
           }
