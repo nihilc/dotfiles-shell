@@ -14,6 +14,7 @@
 | --- | --- | --- | --- |
 | `n` | `<leader>te` | Toggle Explorer | Nvim-Tree |
 | `n` | `<leader>tu` | Toggle UndoTree | UndoTree |
+| `n` | `<leader>ft` | Find Todo | todo-comments |
 | `n` | `<leader>ff` | Find Files | Telescope |
 | `n` | `<leader>fF` | Find Files (Git Files) | Telescope |
 | `n` | `<leader>fb` | Find Buffer | Telescope |
@@ -43,6 +44,8 @@
 | `n` | `N` | keep screen centered when jump prev ||
 | `n` | `]c` | Next Git hunk | Gitsigns |
 | `n` | `[c` | Prev Git hunk | Gitsigns |
+| `n` | `]t` | Next Todo | todo-comments |
+| `n` | `[t` | Prev Todo | todo-comments |
 | `n` | `]i` | Next Conditional start | nvim-treesitter |
 | `n` | `]I` | Next Conditional end | nvim-treesitter |
 | `n` | `[i` | Prev Conditional start | nvim-treesitter |
