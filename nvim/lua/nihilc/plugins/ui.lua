@@ -1,0 +1,77 @@
+return {
+  {
+    'folke/todo-comments.nvim',
+    dependencies = { 'nvim-lua/plenary.nvim' },
+    event = 'VimEnter',
+    keys = {
+      { "]t", function() require("todo-comments").jump_next() end, desc = "Next Todo" },
+      { "[t", function() require("todo-comments").jump_prev() end, desc = "Prev Todo" },
+      { "<leader>ft", function() vim.cmd("TodoTelescope") end, desc = "Find Todo" },
+    },
+    opts = {
+      signs = false,
+      keywords = {
+        TODO = { color = "info", },
+        NOTE = { color = "hint", alt = { "INFO" } },
+        TEST = { color = "test", alt = { "TESTING", "PASSED", "FAILED" } },
+        WARN = { color = "warn", alt = { "WARNING" } },
+        FIX = { color = "error", alt = { "FIXME", "FIXIT", "ISSUE", "ERROR" } },
+      },
+      colors = {
+        info = { "DiagnosticInfo" },
+        hint = { "DiagnosticHint" },
+        test = { "DiagnosticOk" },
+        warn = { "DiagnosticWarn" },
+        error = { "DiagnosticError" },
+        default = { "Identifier" },
+      },
+    },
+  },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    opts = {
+      scope = { enabled = false },
+      exclude = {
+        filetypes = {
+          "help",
+          "alpha",
+          "dashboard",
+          "neo-tree",
+          "Trouble",
+          "trouble",
+          "lazy",
+          "mason",
+          "notify",
+          "toggleterm",
+          "lazyterm",
+        },
+      },
+    }
+  },
+  {
+    "nvim-lualine/lualine.nvim",
+    opts = {
+      options = {
+        theme = "auto",
+        icons_enabled = false,
+        component_separators = { left = "│", right = "│"},
+        section_separators = { left = "", right = ""},
+        globalstatus = true,
+        refresh = {
+          statusline = 1000,
+          tabline = 1000,
+          winbar = 1000,
+        },
+      },
+      sections = {
+        lualine_a = { { "mode", fmt = function(str) return str:sub(1,1) end } },
+        lualine_b = { "branch", "diagnostics" },
+        lualine_c = { "filename" },
+        lualine_x = { "fileformat", "filetype" },
+        lualine_y = { "progress" },
+        lualine_z = { "location" },
+      },
+    },
+  },
+}
