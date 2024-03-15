@@ -12,7 +12,8 @@
 
 | Mode | Keymap | Description | Plugin |
 | --- | --- | --- | --- |
-| `n` | `<leader>fe` | File Explorer | Nvim-Tree |
+| `n` | `<leader>te` | Toggle Explorer | Nvim-Tree |
+| `n` | `<leader>tu` | Toggle UndoTree | UndoTree |
 | `n` | `<leader>ff` | Find Files | Telescope |
 | `n` | `<leader>fF` | Find Files (Git Files) | Telescope |
 | `n` | `<leader>fb` | Find Buffer | Telescope |

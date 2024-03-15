@@ -2,7 +2,7 @@ return {
   "nvim-tree/nvim-tree.lua",
   cmd = { "NvimTreeToggle", "NvimTreeFindFile" },
   keys = {
-    { "<leader>fe", function() vim.cmd("NvimTreeToggle") end, desc = "File Explorer" }
+    { "<leader>te", function() vim.cmd("NvimTreeToggle") end, desc = "Toggle Explorer" }
   },
   opts = {
     view = {
