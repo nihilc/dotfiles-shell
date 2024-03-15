@@ -103,7 +103,7 @@ return {
         goto_next_start = {
           ["]i"] = { query = "@conditional.outer", desc = "Next Conditional start" },
           ["]l"] = { query = "@loop.outer", desc = "Next Loop start" },
-          ["]c"] = { query = "@class.outer", desc = "Next Class start" },
+          -- ["]c"] = { query = "@class.outer", desc = "Next Class start" },
           ["]m"] = { query = "@function.outer", desc = "Next Method/Function def start" },
           ["]a"] = { query = "@parameter.inner", desc = "Next Parameter/Argument start" },
           ["]f"] = { query = "@call.outer", desc = "Next Function call start" },
@@ -111,7 +111,7 @@ return {
         goto_previous_start = {
           ["[i"] = { query = "@conditional.outer", desc = "Prev Conditional start" },
           ["[l"] = { query = "@loop.outer", desc = "Prev Loop start" },
-          ["[c"] = { query = "@class.outer", desc = "Prev Class start" },
+          -- ["[c"] = { query = "@class.outer", desc = "Prev Class start" },
           ["[m"] = { query = "@function.outer", desc = "Prev Method/Function def start" },
           ["[a"] = { query = "@parameter.inner", desc = "Prev Parameter/Argument start" },
           ["[f"] = { query = "@call.outer", desc = "Prev Function call start" },
@@ -119,7 +119,7 @@ return {
         goto_next_end = {
           ["]I"] = { query = "@conditional.outer", desc = "Next Conditional end" },
           ["]L"] = { query = "@loop.outer", desc = "Next Loop end" },
-          ["]C"] = { query = "@class.outer", desc = "Next Class end" },
+          -- ["]C"] = { query = "@class.outer", desc = "Next Class end" },
           ["]M"] = { query = "@function.outer", desc = "Next Method/Function def end" },
           ["]A"] = { query = "@parameter.inner", desc = "Next Parameter/Argument end" },
           ["]F"] = { query = "@call.outer", desc = "Next Function call end" },
@@ -127,7 +127,7 @@ return {
         goto_previous_end = {
           ["[I"] = { query = "@conditional.outer", desc = "Prev Conditional end" },
           ["[L"] = { query = "@loop.outer", desc = "Prev Loop end" },
-          ["[C"] = { query = "@class.outer", desc = "Prev Class end" },
+          -- ["[C"] = { query = "@class.outer", desc = "Prev Class end" },
           ["[M"] = { query = "@function.outer", desc = "Prev Method/Function def end" },
           ["[A"] = { query = "@parameter.inner", desc = "Prev Parameter/Argument end" },
           ["[F"] = { query = "@call.outer", desc = "Prev Function call end" },
