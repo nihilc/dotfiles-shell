@@ -74,4 +74,42 @@ return {
       },
     },
   },
+  {
+    "laytan/cloak.nvim",
+    opts = {
+      enabled = true,
+      cloak_character = "*",
+      highlight_group = "Comment",
+      patterns = {
+        {
+          file_pattern = { ".env*" },
+          cloak_pattern = "=.+"
+        },
+      },
+    }
+  },
+  {
+    "NvChad/nvim-colorizer.lua",
+    opts = {
+      filetypes = { "*" },
+      user_default_options = {
+        RGB = true,
+        RRGGBB = true,
+        names = false,
+        RRGGBBAA = false,
+        AARRGGBB = false,
+        rgb_fn = true,
+        hsl_fn = true,
+        css = false,
+        css_fn = false,
+        -- Available modes for `mode`: foreground, background,  virtualtext
+        mode = "virtualtext",
+        virtualtext = "■",
+        -- Available methods are false / true / "lsp" / "both"
+        tailwind = false,
+        sass = { enable = false, parsers = { "css" }, },
+        always_update = false
+      },
+    }
+  }
 }
