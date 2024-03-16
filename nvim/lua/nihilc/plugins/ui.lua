@@ -111,5 +111,40 @@ return {
         always_update = false
       },
     }
-  }
+  },
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    init = function()
+      vim.o.timeout = true
+      vim.o.timeoutlen = 500
+    end,
+    config = function()
+      require("which-key").setup({
+        window = {
+          border = "single",
+          position = "bottom",
+          margin = { 2, 0.1, 2, 0.1 },
+          padding = { 0, 0, 0, 0 },
+        },
+        layout = {
+          height = { min = 5, max = 10 }, -- min and max height of the columns
+          width = { min = 25, max = 50 }, -- min and max width of the columns
+          spacing = 2, -- spacing between columns
+          align = "center", -- align columns left, center or right
+        },
+        show_help = true,
+      })
+      require("which-key").register({
+        ["<leader>"] = {
+          f = { name = "Find" },
+          g = { name = "Git" },
+          h = { name = "Help" },
+          s = { name = "Swap" },
+          t = { name = "Toggle" },
+          u = { name = "UI" },
+        },
+      })
+    end,
+  },
 }
