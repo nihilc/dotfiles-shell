@@ -104,6 +104,18 @@ Use the text objects like `v<keymap>`, `c<keymap>`, `d<keymap>`, Example to dele
 | `af` | Outer of Function call |
 | `if` | Inner of Function call |
 
+## Comments
+
+| Mode | Keymap | Description |
+| --- | --- | --- |
+| `v` | `gc` | Toggle Line-Comment |
+| `v` | `gb` | Toggle Block-Comment |
+| `n` | `gcc` | Toggle Line-Comment |
+| `n` | `gbc` | Toggle Line-Comment |
+| `n` | `gcO` | Add Comment above |
+| `n` | `gco` | Add Comment below |
+| `n` | `gbA` | Add Comment at end of Line |
+
 ## Git
 
 | Mode | Keymap | Description | Plugin |
