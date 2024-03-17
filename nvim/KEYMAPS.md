@@ -87,22 +87,22 @@ Use the text objects like `v<keymap>`, `c<keymap>`, `d<keymap>`, Example to dele
 
 | Keymap | Description |
 | --- | --- |
-| `a=` | Select outer of Assignment |
-| `i=` | Select inner of Assignment |
-| `l=` | Select left side of Assignment |
-| `r=` | Select right side of Assignment |
-| `ai` | Select outer of Conditional |
-| `ii` | Select inner of Conditional |
-| `al` | Select outer of Loop |
-| `il` | Select inner of Loop |
-| `ac` | Select outer of Class |
-| `ic` | Select inner of Class |
-| `am` | Select outer of Method/Function def |
-| `im` | Select inner of Method/Function def |
-| `aa` | Select outer of Parameter/Argument |
-| `ia` | Select inner of Parameter/Argument |
-| `af` | Select outer of Function call |
-| `if` | Select inner of Function call |
+| `a=` | Outer of Assignment |
+| `i=` | Inner of Assignment |
+| `l=` | Left side of Assignment |
+| `r=` | Right side of Assignment |
+| `ai` | Outer of Conditional |
+| `ii` | Inner of Conditional |
+| `al` | Outer of Loop |
+| `il` | Inner of Loop |
+| `ac` | Outer of Class |
+| `ic` | Inner of Class |
+| `am` | Outer of Method/Function def |
+| `im` | Inner of Method/Function def |
+| `aa` | Outer of Parameter/Argument |
+| `ia` | Inner of Parameter/Argument |
+| `af` | Outer of Function call |
+| `if` | Inner of Function call |
 
 ## Git
 
