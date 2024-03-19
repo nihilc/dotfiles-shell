@@ -1,19 +1,24 @@
 # Nihilc's dotfiles shell
 
-There are my dotfiles for shell programs. You can find my **NVIM** config [here](https://github.com/nihilc/nvim-config)
+There are my dotfiles for shell programs
 
 ## List of programs
 
+- [nvim](#nvim)
 - [tmux](#tmux)
 - [zsh](#zsh)
 - git
 - htop
 
+## Nvim
+
+Details [here](./nvim/README.md)
+
 ## Tmux
 
 Prefix: `<C-z>`
 
-It's just a simple config to work fine with nvim and other tools, the most important changes are in the [bindings](./tmux/README.md) and I use my own [theme](https://github.com/nihilc/tmux-theme):
+It's just a simple config to work fine with nvim and other tools, the most important changes are in the [binding](./tmux/README.md)s, and I use my own [theme](https://github.com/nihilc/tmux-theme):
 
 ![tmux_nvim](./images/tmux_nvim.png)
 
