@@ -42,6 +42,10 @@
 | `n` | `<c-u>` | keep screen centered when `<c-u>` ||
 | `n` | `n` | keep screen centered when jump next ||
 | `n` | `N` | keep screen centered when jump prev ||
+| `n` | `<leader>e` | Harpoon Quick Menu | Harpoon |
+| `n` | `<leader>a` | Harpoon Add | Harpoon |
+| `n` | `<leader>n` | Harpoon Nav Prev | Harpoon |
+| `n` | `<leader>p` | Harpoon Nav Next | Harpoon |
 | `n` | `gD` | Goto Declaration | lsp |
 | `n` | `gd` | Goto Definition | lsp |
 | `n` | `gr` | Goto References | lsp |

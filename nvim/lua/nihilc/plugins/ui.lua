@@ -158,7 +158,7 @@ return {
           },
         },
         float_opts = {
-          border = 'single' ,
+          border = 'single',
           width = 120,
           height = 30,
           winblend = 0,
@@ -175,5 +175,16 @@ return {
         vim.cmd("ToggleTerm direction=vertical size=40")
       end, { desc = "Toggle Term Float" })
     end,
-  }
+  },
+  {
+    "ThePrimeagen/harpoon",
+    config = function()
+      local harpoon = require("harpoon")
+      harpoon.setup()
+      vim.keymap.set("n", "<leader>e", require("harpoon.ui").toggle_quick_menu, { desc = "Harpoon Quick Menu" })
+      vim.keymap.set("n", "<leader>a", require("harpoon.mark").add_file, { desc = "Harpoon Add" })
+      vim.keymap.set("n", "<leader>n", require("harpoon.ui").nav_next, { desc = "Harpoon Nav Next" })
+      vim.keymap.set("n", "<leader>p", require("harpoon.ui").nav_prev, { desc = "Harpoon Nav Prev" })
+    end
+  },
 }
