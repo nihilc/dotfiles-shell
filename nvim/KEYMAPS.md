@@ -42,6 +42,17 @@
 | `n` | `<c-u>` | keep screen centered when `<c-u>` ||
 | `n` | `n` | keep screen centered when jump next ||
 | `n` | `N` | keep screen centered when jump prev ||
+| `n` | `gD` | Goto Declaration | lsp |
+| `n` | `gd` | Goto Definition | lsp |
+| `n` | `gr` | Goto References | lsp |
+| `n` | `gi` | Goto Implementation | lsp |
+| `n` | `gy` | Goto Type Definition | lsp |
+| `n` | `<leader>ls` | Symbols Buffer | lsp |
+| `n` | `<leader>lS` | Symbols Workspace | lsp |
+| `n` | `<leader>ld` | Diagnostics Buffer | lsp |
+| `n` | `<leader>lD` | Diagnostics Workspace | lsp |
+| `n` | `]d` | Next Diagnostic | lsp |
+| `n` | `[d` | Prev Diagnostic | lsp |
 | `n` | `]c` | Next Git hunk | Gitsigns |
 | `n` | `[c` | Prev Git hunk | Gitsigns |
 | `n` | `]t` | Next Todo | todo-comments |
@@ -67,10 +78,20 @@
 | `n` | `[f` | Prev Function call start | nvim-treesitter |
 | `n` | `[F` | Prev Function call end | nvim-treesitter |
 
-## Selection / Edition
+## Completion / Selection / Edition
 
 | Mode | Keymap | Description | Plugin |
 | --- | --- | --- | --- |
+| `n` | `K` | Hover Documentation | lsp |
+| `n` | `<leader>lr` | Rename | lsp |
+| `n` | `<leader>lf` | Format | lsp |
+| `n` | `<leader>la` | Code Action | lsp |
+| `i` | `<c-n>` | Next completion item | cmp |
+| `i` | `<c-p>` | Prev completion item | cmp |
+| `i` | `<c-y>` | Confirm completion item | cmp |
+| `i` | `<c-space>` | Open completion item | cmp |
+| `i` | `<tab>` | Snippet jump next | cmp, luasnip |
+| `i` | `<s-tab>` | Snippet jump prev | cmp, luasnip |
 | `v` | `J` | Move selected lines down ||
 | `v` | `K` | Move selected lines up ||
 | `n` | `<c-space>` | Select incremental start | nvim-treesitter |

@@ -24,7 +24,7 @@ vim.opt.colorcolumn = "80"    -- color column guide
 vim.opt.splitright = true     -- new windows below current
 vim.opt.splitbelow = true     -- new windows right of current
 vim.opt.pumheight = 10        -- pop-up height
-vim.opt.pumblend = 10         -- pop-up transparency 0-100
+vim.opt.pumblend = 0          -- pop-up transparency 0-100
 vim.opt.wrap = false          -- line wrap
 vim.opt.breakindent = true    -- wrapped lines continue visually indent
 
