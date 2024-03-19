@@ -62,28 +62,28 @@ return {
         lookahead = true,
         keymaps = {
           -- You can use the capture groups defined in textobjects.scm
-          ["a="] = { query = "@assignment.outer", desc = "Select outer of Assignment" },
-          ["i="] = { query = "@assignment.inner", desc = "Select inner of Assignment" },
-          ["l="] = { query = "@assignment.lhs", desc = "Select left side of Assignment" },
-          ["r="] = { query = "@assignment.rhs", desc = "Select right side of Assignment" },
+          ["a="] = { query = "@assignment.outer", desc = "Outer of Assignment" },
+          ["i="] = { query = "@assignment.inner", desc = "Inner of Assignment" },
+          ["l="] = { query = "@assignment.lhs", desc = "Left side of Assignment" },
+          ["r="] = { query = "@assignment.rhs", desc = "Right side of Assignment" },
 
-          ["ai"] = { query = "@conditional.outer", desc = "Select outer of Conditional" },
-          ["ii"] = { query = "@conditional.inner", desc = "Select inner of Conditional" },
+          ["ai"] = { query = "@conditional.outer", desc = "Outer of Conditional" },
+          ["ii"] = { query = "@conditional.inner", desc = "Inner of Conditional" },
 
-          ["al"] = { query = "@loop.outer", desc = "Select outer of Loop" },
-          ["il"] = { query = "@loop.inner", desc = "Select inner of Loop" },
+          ["al"] = { query = "@loop.outer", desc = "Outer of Loop" },
+          ["il"] = { query = "@loop.inner", desc = "Inner of Loop" },
 
-          ["ac"] = { query = "@class.outer", desc = "Select outer of Class" },
-          ["ic"] = { query = "@class.inner", desc = "Select inner of Class" },
+          ["ac"] = { query = "@class.outer", desc = "Outer of Class" },
+          ["ic"] = { query = "@class.inner", desc = "Inner of Class" },
 
-          ["am"] = { query = "@function.outer", desc = "Select outer of Method/Function def" },
-          ["im"] = { query = "@function.inner", desc = "Select inner of Method/Function def" },
+          ["am"] = { query = "@function.outer", desc = "Outer of Method/Function def" },
+          ["im"] = { query = "@function.inner", desc = "inner of Method/Function def" },
 
-          ["aa"] = { query = "@parameter.outer", desc = "Select outer of Parameter/Argument" },
-          ["ia"] = { query = "@parameter.inner", desc = "Select inner of Parameter/Argument" },
+          ["aa"] = { query = "@parameter.outer", desc = "Outer of Parameter/Argument" },
+          ["ia"] = { query = "@parameter.inner", desc = "Inner of Parameter/Argument" },
 
-          ["af"] = { query = "@call.outer", desc = "Select outer of Function call" },
-          ["if"] = { query = "@call.inner", desc = "Select inner of Function call" },
+          ["af"] = { query = "@call.outer", desc = "Outer of Function call" },
+          ["if"] = { query = "@call.inner", desc = "Inner of Function call" },
         },
       },
       swap = {

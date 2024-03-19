@@ -11,7 +11,7 @@ vim.g.loaded_perl_provider = 0
 vim.opt.laststatus = 3        -- always show status line and only one
 vim.opt.ruler = true          -- show line and column number of cursor
 vim.opt.cursorline = true     -- highlights cursor line
-vim.opt.showmode = true       -- show mode
+vim.opt.showmode = false      -- show mode
 vim.opt.signcolumn = "yes"    -- always show sign column
 vim.opt.termguicolors = true  -- true color support
 
@@ -24,7 +24,7 @@ vim.opt.colorcolumn = "80"    -- color column guide
 vim.opt.splitright = true     -- new windows below current
 vim.opt.splitbelow = true     -- new windows right of current
 vim.opt.pumheight = 10        -- pop-up height
-vim.opt.pumblend = 10         -- pop-up transparency 0-100
+vim.opt.pumblend = 0          -- pop-up transparency 0-100
 vim.opt.wrap = false          -- line wrap
 vim.opt.breakindent = true    -- wrapped lines continue visually indent
 

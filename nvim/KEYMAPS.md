@@ -12,7 +12,9 @@
 
 | Mode | Keymap | Description | Plugin |
 | --- | --- | --- | --- |
-| `n` | `<leader>fe` | File Explorer | Nvim-Tree |
+| `n` | `<leader>te` | Toggle Explorer | Nvim-Tree |
+| `n` | `<leader>tu` | Toggle UndoTree | UndoTree |
+| `n` | `<leader>ft` | Find Todo | todo-comments |
 | `n` | `<leader>ff` | Find Files | Telescope |
 | `n` | `<leader>fF` | Find Files (Git Files) | Telescope |
 | `n` | `<leader>fb` | Find Buffer | Telescope |
@@ -40,8 +42,21 @@
 | `n` | `<c-u>` | keep screen centered when `<c-u>` ||
 | `n` | `n` | keep screen centered when jump next ||
 | `n` | `N` | keep screen centered when jump prev ||
+| `n` | `gD` | Goto Declaration | lsp |
+| `n` | `gd` | Goto Definition | lsp |
+| `n` | `gr` | Goto References | lsp |
+| `n` | `gi` | Goto Implementation | lsp |
+| `n` | `gy` | Goto Type Definition | lsp |
+| `n` | `<leader>ls` | Symbols Buffer | lsp |
+| `n` | `<leader>lS` | Symbols Workspace | lsp |
+| `n` | `<leader>ld` | Diagnostics Buffer | lsp |
+| `n` | `<leader>lD` | Diagnostics Workspace | lsp |
+| `n` | `]d` | Next Diagnostic | lsp |
+| `n` | `[d` | Prev Diagnostic | lsp |
 | `n` | `]c` | Next Git hunk | Gitsigns |
 | `n` | `[c` | Prev Git hunk | Gitsigns |
+| `n` | `]t` | Next Todo | todo-comments |
+| `n` | `[t` | Prev Todo | todo-comments |
 | `n` | `]i` | Next Conditional start | nvim-treesitter |
 | `n` | `]I` | Next Conditional end | nvim-treesitter |
 | `n` | `[i` | Prev Conditional start | nvim-treesitter |
@@ -63,10 +78,20 @@
 | `n` | `[f` | Prev Function call start | nvim-treesitter |
 | `n` | `[F` | Prev Function call end | nvim-treesitter |
 
-## Selection / Edition
+## Completion / Selection / Edition
 
 | Mode | Keymap | Description | Plugin |
 | --- | --- | --- | --- |
+| `n` | `K` | Hover Documentation | lsp |
+| `n` | `<leader>lr` | Rename | lsp |
+| `n` | `<leader>lf` | Format | lsp |
+| `n` | `<leader>la` | Code Action | lsp |
+| `i` | `<c-n>` | Next completion item | cmp |
+| `i` | `<c-p>` | Prev completion item | cmp |
+| `i` | `<c-y>` | Confirm completion item | cmp |
+| `i` | `<c-space>` | Open completion item | cmp |
+| `i` | `<tab>` | Snippet jump next | cmp, luasnip |
+| `i` | `<s-tab>` | Snippet jump prev | cmp, luasnip |
 | `v` | `J` | Move selected lines down ||
 | `v` | `K` | Move selected lines up ||
 | `n` | `<c-space>` | Select incremental start | nvim-treesitter |
@@ -83,22 +108,34 @@ Use the text objects like `v<keymap>`, `c<keymap>`, `d<keymap>`, Example to dele
 
 | Keymap | Description |
 | --- | --- |
-| `a=` | Select outer of Assignment |
-| `i=` | Select inner of Assignment |
-| `l=` | Select left side of Assignment |
-| `r=` | Select right side of Assignment |
-| `ai` | Select outer of Conditional |
-| `ii` | Select inner of Conditional |
-| `al` | Select outer of Loop |
-| `il` | Select inner of Loop |
-| `ac` | Select outer of Class |
-| `ic` | Select inner of Class |
-| `am` | Select outer of Method/Function def |
-| `im` | Select inner of Method/Function def |
-| `aa` | Select outer of Parameter/Argument |
-| `ia` | Select inner of Parameter/Argument |
-| `af` | Select outer of Function call |
-| `if` | Select inner of Function call |
+| `a=` | Outer of Assignment |
+| `i=` | Inner of Assignment |
+| `l=` | Left side of Assignment |
+| `r=` | Right side of Assignment |
+| `ai` | Outer of Conditional |
+| `ii` | Inner of Conditional |
+| `al` | Outer of Loop |
+| `il` | Inner of Loop |
+| `ac` | Outer of Class |
+| `ic` | Inner of Class |
+| `am` | Outer of Method/Function def |
+| `im` | Inner of Method/Function def |
+| `aa` | Outer of Parameter/Argument |
+| `ia` | Inner of Parameter/Argument |
+| `af` | Outer of Function call |
+| `if` | Inner of Function call |
+
+## Comments
+
+| Mode | Keymap | Description |
+| --- | --- | --- |
+| `v` | `gc` | Toggle Line-Comment |
+| `v` | `gb` | Toggle Block-Comment |
+| `n` | `gcc` | Toggle Line-Comment |
+| `n` | `gbc` | Toggle Line-Comment |
+| `n` | `gcO` | Add Comment above |
+| `n` | `gco` | Add Comment below |
+| `n` | `gbA` | Add Comment at end of Line |
 
 ## Git
 

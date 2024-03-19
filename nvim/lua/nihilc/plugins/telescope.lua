@@ -17,6 +17,7 @@ return {
             mirror = true,
           },
         },
+        borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
         preview = {
           treesitter = {
             enable = {

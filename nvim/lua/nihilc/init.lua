@@ -22,6 +22,9 @@ require("lazy").setup({
   install = {
     colorscheme = { "onedark", "habamax" },
   },
+  ui = {
+    border = "single"
+  },
   checker = {
     enabled = true,
     notify = false,
