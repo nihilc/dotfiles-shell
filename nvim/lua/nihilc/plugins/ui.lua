@@ -4,9 +4,9 @@ return {
     dependencies = { 'nvim-lua/plenary.nvim' },
     event = 'VimEnter',
     keys = {
-      { "]t", function() require("todo-comments").jump_next() end, desc = "Next Todo" },
-      { "[t", function() require("todo-comments").jump_prev() end, desc = "Prev Todo" },
-      { "<leader>ft", function() vim.cmd("TodoTelescope") end, desc = "Find Todo" },
+      { "]t",         function() require("todo-comments").jump_next() end, desc = "Next Todo" },
+      { "[t",         function() require("todo-comments").jump_prev() end, desc = "Prev Todo" },
+      { "<leader>ft", function() vim.cmd("TodoTelescope") end,             desc = "Find Todo" },
     },
     opts = {
       signs = false,
@@ -55,8 +55,8 @@ return {
       options = {
         theme = "auto",
         icons_enabled = false,
-        component_separators = { left = "│", right = "│"},
-        section_separators = { left = "", right = ""},
+        component_separators = { left = "│", right = "│" },
+        section_separators = { left = "", right = "" },
         globalstatus = true,
         refresh = {
           statusline = 1000,
@@ -65,7 +65,7 @@ return {
         },
       },
       sections = {
-        lualine_a = { { "mode", fmt = function(str) return str:sub(1,1) end } },
+        lualine_a = { { "mode", fmt = function(str) return str:sub(1, 1) end } },
         lualine_b = { "branch", "diagnostics" },
         lualine_c = { "filename" },
         lualine_x = { "fileformat", "filetype" },
@@ -130,8 +130,8 @@ return {
         layout = {
           height = { min = 5, max = 10 }, -- min and max height of the columns
           width = { min = 25, max = 50 }, -- min and max width of the columns
-          spacing = 2, -- spacing between columns
-          align = "center", -- align columns left, center or right
+          spacing = 2,                    -- spacing between columns
+          align = "center",               -- align columns left, center or right
         },
         show_help = true,
       })
@@ -147,4 +147,33 @@ return {
       })
     end,
   },
+  {
+    "akinsho/toggleterm.nvim",
+    version = "*",
+    config = function()
+      require("toggleterm").setup({
+        highlights = {
+          FloatBorder = {
+            link = 'FloatBorder',
+          },
+        },
+        float_opts = {
+          border = 'single' ,
+          width = 120,
+          height = 30,
+          winblend = 0,
+          title_pos = 'center'
+        },
+      })
+      vim.keymap.set({ "n", "t" }, "<m-t>", function()
+        vim.cmd("ToggleTerm direction=float")
+      end, { desc = "Toggle Term Float" })
+      vim.keymap.set({ "n", "t" }, "<m-h>", function()
+        vim.cmd("ToggleTerm direction=horizontal")
+      end, { desc = "Toggle Term Float" })
+      vim.keymap.set({ "n", "t" }, "<m-v>", function()
+        vim.cmd("ToggleTerm direction=vertical size=40")
+      end, { desc = "Toggle Term Float" })
+    end,
+  }
 }
