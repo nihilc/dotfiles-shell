@@ -3,11 +3,16 @@ if [ -d $HOME/.local/bin ]
 then
     export PATH="$PATH:$HOME/.local/bin"
 fi
+export PATH="$PATH:$HOME/dev/go/bin"
 # XDG
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_STATE_HOME=$HOME/.local/state
 export XDG_CACHE_HOME=$HOME/.cache
+# Fix paths
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
+export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
+export GOPATH="$XDG_DATA_HOME"/go
 # Env
 export TERM=tmux-256color
 export EDITOR=nvim
@@ -19,3 +24,4 @@ export LESS_TERMCAP_se=$'\e[0m'
 export LESS_TERMCAP_so=$'\e[01;33m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;31m'
+. "/home/nihil/.local/share/cargo/env"
