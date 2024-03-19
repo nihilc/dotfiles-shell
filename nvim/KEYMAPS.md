@@ -42,6 +42,10 @@
 | `n` | `<c-u>` | keep screen centered when `<c-u>` ||
 | `n` | `n` | keep screen centered when jump next ||
 | `n` | `N` | keep screen centered when jump prev ||
+| `n` | `<leader>e` | Harpoon Quick Menu | Harpoon |
+| `n` | `<leader>a` | Harpoon Add | Harpoon |
+| `n` | `<leader>n` | Harpoon Nav Prev | Harpoon |
+| `n` | `<leader>p` | Harpoon Nav Next | Harpoon |
 | `n` | `gD` | Goto Declaration | lsp |
 | `n` | `gd` | Goto Definition | lsp |
 | `n` | `gr` | Goto References | lsp |
@@ -156,6 +160,10 @@ Use the text objects like `v<keymap>`, `c<keymap>`, `d<keymap>`, Example to dele
 
 | Mode | Keymap | Description | Plugin |
 | --- | --- | --- | --- |
+| `n` `t` | `<m-t>` | Toggle Term Float ||
+| `n` `t` | `<m-h>` | Toggle Term Horizontal ||
+| `n` `t` | `<m-v>` | Toggle Term Vertical ||
+
 | `n` | `<leader>uw` | UI Toggle wrap ||
 | `n` | `<leader>ul` | UI Toggle list ||
 | `n` | `<leader>ugs` | UI Toggle Git sings | Gitsigns |
