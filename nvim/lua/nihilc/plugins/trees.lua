@@ -39,8 +39,14 @@ return {
           show = {
             file = false,
             folder = false,
-            folder_arrow = false,
+            folder_arrow = true,
             modified = false,
+          },
+          glyphs = {
+            folder = {
+              arrow_closed = "",
+              arrow_open = "",
+            }
           },
         },
       },
