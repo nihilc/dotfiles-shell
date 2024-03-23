@@ -33,3 +33,12 @@ vim.api.nvim_create_autocmd("FileType", {
   pattern = { "gitcommit", "gitrebase", },
   command = "startinsert | 1"
 })
+
+-- Format on save
+autocmd("BufWritePre", {
+  group = TheNihilcGroup,
+  desc = "Format On Save",
+  callback = function(bufnr)
+    vim.lsp.buf.format()
+  end
+})
