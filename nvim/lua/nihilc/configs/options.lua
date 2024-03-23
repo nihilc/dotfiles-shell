@@ -43,13 +43,13 @@ vim.opt.undolevels = 10000    -- number of changes to undo
 
 vim.opt.clipboard = "unnamedplus"
 
-vim.opt.spell = true            -- enable spell
-vim.opt.spelloptions = "camel"  -- fix camelCase spell
-vim.opt.spelllang = { "en" }    -- Spell language
+vim.opt.spell = true                          -- enable spell
+vim.opt.spelloptions = "camel"                -- fix camelCase spell
+vim.opt.spelllang = { "en" }                  -- Spell language
 
-vim.o.foldmethod = "expr"     -- Use expr to fold
-vim.o.foldenable = false      -- disable folding at startup
-vim.o.foldlevelstart = 99     -- disable folding at startup
+vim.o.foldmethod = "expr"                     -- Use expr to fold
+vim.o.foldenable = false                      -- disable folding at startup
+vim.o.foldlevelstart = 99                     -- disable folding at startup
 vim.o.foldexpr = "nvim_treesitter#foldexpr()" -- use tree-sitter to fold
 
 vim.opt.list = true

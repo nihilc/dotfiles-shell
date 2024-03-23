@@ -5,7 +5,7 @@ return {
   config = function()
     require("telescope").setup({
       defaults = {
-        file_ignore_patterns = {"node_modules", "build"},
+        file_ignore_patterns = { "node_modules", "build" },
         path_display = { "truncate" },
         sorting_strategy = "ascending",
         layout_strategy = "vertical",
@@ -73,7 +73,8 @@ return {
 
     local builtin = require("telescope.builtin")
     vim.keymap.set("n", "<leader>ff", function() builtin.find_files({ previewer = false }) end, { desc = "Find Files" })
-    vim.keymap.set("n", "<leader>fF", function() builtin.git_files({ previewer = false }) end, { desc = "Find Files (Git Files)" })
+    vim.keymap.set("n", "<leader>fF", function() builtin.git_files({ previewer = false }) end,
+      { desc = "Find Files (Git Files)" })
     vim.keymap.set("n", "<leader>fb", function() builtin.buffers({ previewer = false }) end, { desc = "Find Buffer" })
     vim.keymap.set("n", "<leader>fg", function() builtin.live_grep() end, { desc = "Live Grep" })
 
@@ -94,7 +95,7 @@ return {
 
     vim.keymap.set("n", "<leader>fW", function()
       local word = vim.fn.expand("<cWORD>")
-      builtin.grep_string({ search = word})
+      builtin.grep_string({ search = word })
     end, { desc = "Find Current WORD" })
 
     vim.keymap.set("n", "<leader>ht", function() builtin.help_tags() end, { desc = "Help Tags" })

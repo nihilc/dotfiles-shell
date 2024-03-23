@@ -8,7 +8,7 @@ autocmd("TextYankPost", {
   group = TheNihilcGroup,
   desc = "Highlight when yanking text",
   callback = function()
-    vim.highlight.on_yank({timeout = 250, on_visual = false})
+    vim.highlight.on_yank({ timeout = 250, on_visual = false })
   end,
 })
 
@@ -21,9 +21,9 @@ autocmd("BufWritePre", {
 
 -- Start terminal in insert mode
 vim.api.nvim_create_autocmd("TermOpen", {
-  group = TheNihilcGroup,
-  desc = "Start terminal in insert mode",
-  command  = "startinsert | set winfixheight"
+  group   = TheNihilcGroup,
+  desc    = "Start terminal in insert mode",
+  command = "startinsert | set winfixheight"
 })
 
 -- Start git messages in insert mode
