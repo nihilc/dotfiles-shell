@@ -20,25 +20,16 @@ autocmd("BufWritePre", {
 })
 
 -- Start terminal in insert mode
-vim.api.nvim_create_autocmd("TermOpen", {
+autocmd("TermOpen", {
   group   = TheNihilcGroup,
   desc    = "Start terminal in insert mode",
   command = "startinsert | set winfixheight"
 })
 
 -- Start git messages in insert mode
-vim.api.nvim_create_autocmd("FileType", {
+autocmd("FileType", {
   group = TheNihilcGroup,
   desc = "Start git messages in insert mode",
   pattern = { "gitcommit", "gitrebase", },
   command = "startinsert | 1"
-})
-
--- Format on save
-autocmd("BufWritePre", {
-  group = TheNihilcGroup,
-  desc = "Format On Save",
-  callback = function(bufnr)
-    vim.lsp.buf.format()
-  end
 })

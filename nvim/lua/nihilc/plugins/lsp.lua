@@ -82,7 +82,15 @@ return {
       -- dartls = {},
     }
 
-    require('mason').setup({ ui = { border = "single" } })
+    require('mason').setup({
+      ensure_installed = {
+        "prettier",
+        "shfmt",
+        "sqlfmt",
+        "black",
+      },
+      ui = { border = "single" },
+    })
     require('mason-lspconfig').setup({
       ensure_installed = vim.tbl_keys(servers or {}),
       handlers = {
