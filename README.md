@@ -18,7 +18,7 @@ Details [here](./nvim/README.md)
 
 Prefix: `<C-z>`
 
-It's just a simple config to work fine with nvim and other tools, the most important changes are in the [binding](./tmux/README.md)s, and I use my own [theme](https://github.com/nihilc/tmux-theme):
+It's just a simple config to work fine with nvim and other tools, the most important changes are in the [bindings](./tmux/README.md), and I use my own [theme](https://github.com/nihilc/tmux-theme):
 
 ![tmux_nvim](./images/tmux_nvim.png)
 
@@ -51,7 +51,7 @@ Simple, minimal, scalable and functional.
   - [autossugestion](https://github.com/zsh-users/zsh-autosuggestions)
   - [completions](https://github.com/zsh-users/zsh-completions)
   - [syntax highlight](https://github.com/zsh-users/zsh-syntax-highlighting)
-- theme [powerlevel0k](https://github.com/romkatv/powerlevel10k)
+- prompt [starship](https://starship.rs/)
 
 > [!NOTE]
 > You can comment the source of _autocmd_ in `$ZDOTDIR/.zshrc` if you don't want to auto/re start the ssh-agent in every new shell outside tmux
@@ -72,13 +72,12 @@ Set the `ZDOTDIR` env in the startup `/etc/zsh/zshenv`
 ZDOTDIR=$HOME/.config/zsh
 ```
 
-Clone the plugins and the powerlevel10k theme
+Clone the plugins
 
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions $ZDOTDIR/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-completions $ZDOTDIR/plugins/zsh-completions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting $ZDOTDIR/plugins/zsh-syntax-highlighting
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZDOTDIR/themes/powerlevel10k
 ```
 
 Now close and open a new terminal.

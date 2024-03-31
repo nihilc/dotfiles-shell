@@ -9,3 +9,4 @@ source "$ZDOTDIR/config/autocmd.zsh"
 # Plugins
 source "$ZDOTDIR/config/plugins.zsh"
 # Theme
+eval "$(starship init zsh)"
