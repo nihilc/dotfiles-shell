@@ -12,6 +12,7 @@ Prefix: `<C-z>`
 | `<C-M-R>` |         | Reload config             |
 |    `:`    |         | Command prompt            |
 |    `?`    |         | List default key bindings |
+|  `<M-b>`  |         | Toggle status             |
 
 ### Panes
 
