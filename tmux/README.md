@@ -2,6 +2,8 @@
 
 ## Bindings
 
+Prefix: `<C-z>`
+
 ### Basic
 
 |   Bind    | Unbind  | Description               |
@@ -30,18 +32,18 @@
 
 #### Pane resize
 
-|   Bind    |   Unbind    | Description     |
-| :-------: | :---------: | --------------- |
-|  `<M-k>`  |  `<C-Up>`   | Resize +1 cell  |
-|  `<M-j>`  | `<C-Down>`  | Resize +1 cell  |
-|  `<M-h>`  | `<C-Left>`  | Resize +1 cell  |
-|  `<M-l>`  | `<C-Right>` | Resize +1 cell  |
-| `<M-S-k>` |  `<M-Up>`   | Resize +5 cells |
-| `<M-S-j>` | `<M-Down>`  | Resize +5 cells |
-| `<M-S-h>` | `<M-Left>`  | Resize +5 cells |
-| `<M-S-l>` | `<M-Right>` | Resize +5 cells |
+|   Bind    |   Unbind    | Description           |
+| :-------: | :---------: | --------------------- |
+|  `<M-k>`  |  `<C-Up>`   | Resize +1 cell up     |
+|  `<M-j>`  | `<C-Down>`  | Resize +1 cell down   |
+|  `<M-h>`  | `<C-Left>`  | Resize +1 cell left   |
+|  `<M-l>`  | `<C-Right>` | Resize +1 cell right  |
+| `<M-S-k>` |  `<M-Up>`   | Resize +5 cells up    |
+| `<M-S-j>` | `<M-Down>`  | Resize +5 cells down  |
+| `<M-S-h>` | `<M-Left>`  | Resize +5 cells left  |
+| `<M-S-l>` | `<M-Right>` | Resize +5 cells right |
 
-### Pane layout
+#### Pane layout
 
 |    Bind     | Unbind | Description             |
 | :---------: | :----: | :---------------------- |
@@ -82,12 +84,11 @@
 
 #### Window management
 
-|  Bind   | Unbind | Description            |
-| :-----: | :----: | :--------------------- |
-|   `r`   |  `,`   | Rename window          |
-|   `c`   |        | New window in same dir |
-| `<C-c>` |        | New window in $HOME    |
-|   `X`   |  `&`   | Kill window            |
+| Bind | Unbind | Description            |
+| :--: | :----: | :--------------------- |
+| `r`  |  `,`   | Rename window          |
+| `c`  |        | New window in same dir |
+| `X`  |  `&`   | Kill window            |
 
 ### Sessions
 
