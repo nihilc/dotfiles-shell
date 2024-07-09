@@ -3,7 +3,7 @@ if [ -d $HOME/.local/bin ]
 then
     export PATH="$PATH:$HOME/.local/bin"
 fi
-export PATH="$PATH:$HOME/dev/go/bin"
+export PATH=$PATH:/usr/local/go/bin
 # XDG
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_CONFIG_HOME=$HOME/.config
