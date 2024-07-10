@@ -158,11 +158,11 @@ Use the text objects like `v<keymap>`, `c<keymap>`, `d<keymap>`, Example to dele
 
 ## Term
 
-| Mode    | Keymap  | Description            | Plugin |
-| ------- | ------- | ---------------------- | ------ |
-| `n` `t` | `<m-t>` | Toggle Term Float      |        |
-| `n` `t` | `<m-h>` | Toggle Term Horizontal |        |
-| `n` `t` | `<m-v>` | Toggle Term Vertical   |        |
+| Mode    | Keymap  | Description            | Plugin     |
+| ------- | ------- | ---------------------- | ---------- |
+| `n` `t` | `<m-t>` | Toggle Term Float      | ToggleTerm |
+| `n` `t` | `<m-h>` | Toggle Term Horizontal | ToggleTerm |
+| `n` `t` | `<m-v>` | Toggle Term Vertical   | ToggleTerm |
 
 ## UI
 
