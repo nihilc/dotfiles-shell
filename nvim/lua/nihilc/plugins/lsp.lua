@@ -77,9 +77,7 @@ return {
       },
       gopls = {},
       rust_analyzer = {},
-      -- java_language_server = {},
-      -- kotlin_language_server = {},
-      -- dartls = {},
+      dockerls = {}
     }
 
     require('mason').setup({

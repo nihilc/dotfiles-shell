@@ -27,6 +27,8 @@ return {
           "readme.md",
           "composer.json",
           "package.json",
+          "dockerfile",
+          "Dockerfile",
         },
         root_folder_label = function(path)
           return "../" .. vim.fn.fnamemodify(path, ":t")
