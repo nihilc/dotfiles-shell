@@ -35,7 +35,7 @@ ln -s "$(realpath tmux)" ~/.config/tmux
 Then install [tpm](https://github.com/tpm/tpm)
 
 ```bash
-git clone https://github.com/tmux-plugins/tpm.git ~/.tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm.git ~/.config/tmux/plugins/tpm
 ```
 
 Finally open tmux and install the plugins with `prefix` + `I` (capital i)
