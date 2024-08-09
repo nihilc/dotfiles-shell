@@ -1,9 +1,3 @@
-# Path
-if [ -d $HOME/.local/bin ]
-then
-    export PATH="$PATH:$HOME/.local/bin"
-fi
-export PATH=$PATH:/usr/local/go/bin
 # XDG
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_CONFIG_HOME=$HOME/.config
@@ -13,6 +7,11 @@ export XDG_CACHE_HOME=$HOME/.cache
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
 export GOPATH="$XDG_DATA_HOME"/go
+export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
+# Path
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:$GOPATH/bin"
 # Env
 export TERM=tmux-256color
 export EDITOR=nvim
