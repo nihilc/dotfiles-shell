@@ -104,19 +104,40 @@ return {
     -- Configure borders for hover, signatureHelp
     vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "single", })
     vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = "single" })
+
     -- Config diagnostics
+    local severity = vim.diagnostic.severity
+    local severity_map = {
+      [severity.ERROR] = { text = "E", hl = "DiagnosticError" },
+      [severity.WARN] = { text = "W", hl = "DiagnosticWarn" },
+      [severity.INFO] = { text = "I", hl = "DiagnosticInfo" },
+      [severity.HINT] = { text = "H", hl = "DiagnosticHint" },
+    }
     vim.diagnostic.config({
+      severity_sort = true,
       float = {
         border = "single",
-        source = "always",
+        source = "if_many",
         header = "",
-        prefix = "",
+        prefix = function(diagnostic)
+          return severity_map[diagnostic.severity].text .. ": ", severity_map[diagnostic.severity].hl
+        end,
       },
       virtual_text = {
-        prefix = "●",
+        prefix = function(diagnostic)
+          return severity_map[diagnostic.severity].text .. ":"
+        end,
         severity = {
           max = vim.diagnostic.severity.ERROR,
           min = vim.diagnostic.severity.WARN,
+        },
+      },
+      signs = {
+        numhl = {
+          [severity.ERROR] = severity_map[severity.ERROR].hl,
+          [severity.WARN] = severity_map[severity.WARN].hl,
+          [severity.INFO] = severity_map[severity.INFO].hl,
+          [severity.HINT] = severity_map[severity.HINT].hl,
         },
       },
     })
