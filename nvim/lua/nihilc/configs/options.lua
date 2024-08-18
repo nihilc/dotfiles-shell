@@ -52,5 +52,5 @@ vim.o.foldenable = false                      -- disable folding at startup
 vim.o.foldlevelstart = 99                     -- disable folding at startup
 vim.o.foldexpr = "nvim_treesitter#foldexpr()" -- use tree-sitter to fold
 
-vim.opt.list = true
+vim.opt.list = false
 vim.opt.listchars = { eol = "¬", tab = "➔ ", trail = "•", nbsp = "␣", extends = "▶", precedes = "◀" }
