@@ -1,8 +1,6 @@
 #!/bin/zsh
 
-# Start ssh-agent outside tmux in silent
-if [ -z "$TMUX" ] && [ -n "$PS1" ]
-then
-    pkill ssh-agent
-    eval "$(ssh-agent -s)" > /dev/null 2>&1
+# Try to connect to tmux session or start a new one
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+  tmux a || tmux
 fi

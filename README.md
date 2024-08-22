@@ -42,7 +42,7 @@ Finally open tmux and install the plugins with `prefix` + `I` (capital i)
 
 ## Zsh
 
-Simple, minimal, scalable and functional.
+Features:
 
 - autocompletion
 - vim movement
@@ -52,9 +52,6 @@ Simple, minimal, scalable and functional.
   - [completions](https://github.com/zsh-users/zsh-completions)
   - [syntax highlight](https://github.com/zsh-users/zsh-syntax-highlighting)
 - prompt [starship](https://starship.rs/)
-
-> [!NOTE]
-> You can comment the source of _autocmd_ in `$ZDOTDIR/.zshrc` if you don't want to auto/re start the ssh-agent in every new shell outside tmux
 
 ### Usage
 
