@@ -10,3 +10,4 @@ source "$ZDOTDIR/config/autocmd.zsh"
 source "$ZDOTDIR/config/plugins.zsh"
 # Theme
 eval "$(starship init zsh)"
+eval "$(direnv hook zsh)"
