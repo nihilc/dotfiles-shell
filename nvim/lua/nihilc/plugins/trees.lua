@@ -60,6 +60,9 @@ return {
         enable = true,
         show_on_open_dirs = false,
       },
+      filters = {
+        custom = { "^\\.git$", "node_modules" },
+      },
     },
   },
   {
