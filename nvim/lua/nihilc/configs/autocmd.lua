@@ -23,7 +23,7 @@ autocmd("BufWritePre", {
 autocmd("TermOpen", {
   group   = TheNihilcGroup,
   desc    = "Start terminal in insert mode",
-  command = "startinsert | set winfixheight"
+  command = "startinsert | set winfixheight | setlocal nospell"
 })
 
 -- Start git messages in insert mode
