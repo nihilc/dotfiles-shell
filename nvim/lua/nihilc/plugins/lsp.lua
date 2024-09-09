@@ -44,7 +44,7 @@ return {
       html = {},
       emmet_language_server = {},
       cssls = {},
-      tsserver = {},
+      ts_ls = {},
       jsonls = {},
 
       -- Languages
