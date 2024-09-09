@@ -4,7 +4,8 @@ return {
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
     'WhoIsSethDaniel/mason-tool-installer.nvim',
-    'mfussenegger/nvim-jdtls'
+    'mfussenegger/nvim-jdtls',
+    'nanotee/sqls.nvim'
   },
   config = function()
     vim.api.nvim_create_autocmd('LspAttach', {
@@ -73,7 +74,11 @@ return {
           },
         },
       },
-      -- sqls = {},
+      sqls = {
+        on_attach = function(client, bufnr)
+          require('sqls').on_attach(client, bufnr)
+        end
+      },
       pyright = {},
       intelephense = {
         init_options = {
