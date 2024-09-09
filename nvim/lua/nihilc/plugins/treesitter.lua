@@ -15,6 +15,10 @@ return {
       "typescript",
       "json",
       "jsonc",
+      -- Frameworks
+      "astro",
+      "svelte",
+      "vue",
       -- Languages
       "c",
       "cpp",

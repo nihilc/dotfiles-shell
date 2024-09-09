@@ -46,6 +46,12 @@ return {
       cssls = {},
       ts_ls = {},
       jsonls = {},
+      --
+      -- Frameworks
+      tailwindcss = {},
+      astro = {},
+      svelte = {},
+      vuels = {},
 
       -- Languages
       clangd = {},
@@ -79,6 +85,7 @@ return {
       gopls = {},
       rust_analyzer = {},
       dockerls = {}
+
     }
 
     require('mason').setup({
