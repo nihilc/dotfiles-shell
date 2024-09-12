@@ -8,6 +8,9 @@ export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
 export GOPATH="$XDG_DATA_HOME"/go
 export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
+export PSQL_HISTORY="$XDG_DATA_HOME/psql_history"
+export PSQLRC="$XDG_CONFIG_HOME/pg/psqlrc"
+export SQLITE_HISTORY="$XDG_CACHE_HOME"/sqlite_history
 # Path
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/usr/local/go/bin"
