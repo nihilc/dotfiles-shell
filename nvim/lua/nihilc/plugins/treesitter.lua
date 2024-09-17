@@ -16,6 +16,7 @@ return {
       "json",
       "jsonc",
       -- Frameworks
+      "tsx",
       "astro",
       "svelte",
       "vue",
