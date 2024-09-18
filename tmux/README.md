@@ -85,11 +85,12 @@ Prefix: `<C-z>`
 
 #### Window management
 
-| Bind | Unbind | Description            |
-| :--: | :----: | :--------------------- |
-| `r`  |  `,`   | Rename window          |
-| `c`  |        | New window in same dir |
-| `X`  |  `&`   | Kill window            |
+|  Bind   | Unbind | Description                |
+| :-----: | :----: | :------------------------- |
+|   `r`   |  `,`   | Rename window              |
+|   `c`   |        | New window                 |
+| `<C-c>` |        | New window in current path |
+|   `X`   |  `&`   | Kill window                |
 
 ### Sessions
 
