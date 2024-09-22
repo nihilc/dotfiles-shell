@@ -33,3 +33,10 @@ autocmd("FileType", {
   pattern = { "gitcommit", "gitrebase", },
   command = "startinsert | 1"
 })
+
+autocmd("FileType", {
+  desc = "Config fold for git logs",
+  group = TheNihilcGroup,
+  pattern = "git",
+  command = "setlocal foldmethod=syntax"
+})
