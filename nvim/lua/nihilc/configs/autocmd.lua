@@ -3,33 +3,29 @@ local autocmd = vim.api.nvim_create_autocmd
 
 TheNihilcGroup = augroup("TheNihilc", {})
 
--- Highlight when yanking text
 autocmd("TextYankPost", {
-  group = TheNihilcGroup,
   desc = "Highlight when yanking text",
+  group = TheNihilcGroup,
   callback = function()
     vim.highlight.on_yank({ timeout = 250, on_visual = false })
   end,
 })
 
--- Remove white spaces before save
 autocmd("BufWritePre", {
-  group = TheNihilcGroup,
   desc = "Remove white spaces before save",
+  group = TheNihilcGroup,
   command = "%s/\\s\\+$//e"
 })
 
--- Start terminal in insert mode
 autocmd("TermOpen", {
-  group   = TheNihilcGroup,
   desc    = "Start terminal in insert mode",
+  group   = TheNihilcGroup,
   command = "startinsert | set winfixheight | setlocal nospell"
 })
 
--- Start git messages in insert mode
 autocmd("FileType", {
-  group = TheNihilcGroup,
   desc = "Start git messages in insert mode",
+  group = TheNihilcGroup,
   pattern = { "gitcommit", "gitrebase", },
   command = "startinsert | 1"
 })
