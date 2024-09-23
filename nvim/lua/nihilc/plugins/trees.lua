@@ -72,4 +72,19 @@ return {
       { '<leader>tu', vim.cmd.UndotreeToggle, desc = 'Toggle Undotree' },
     },
   },
+  {
+    "simrat39/symbols-outline.nvim",
+    keys = {
+      { '<leader>ts', vim.cmd.SymbolsOutline, desc = 'Toggle SymbolsOutline' },
+    },
+    config = function()
+      require("symbols-outline").setup()
+      vim.api.nvim_create_autocmd("FileType", {
+        desc = "Disable spell and list on SymbolsOutline",
+        group = TheNihilcGroup,
+        pattern = "Outline",
+        command = "setlocal nospell | setlocal nolist"
+      })
+    end,
+  }
 }

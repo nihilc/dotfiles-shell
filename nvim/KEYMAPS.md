@@ -10,22 +10,23 @@
 
 ## Files / Search / Help
 
-| Mode                   | Keymap       | Description              | Plugin        |
-| ---------------------- | ------------ | ------------------------ | ------------- |
-| `n`                    | `<leader>te` | Toggle Explorer          | Nvim-Tree     |
-| `n`                    | `<leader>tu` | Toggle UndoTree          | UndoTree      |
-| `n`                    | `<leader>td` | Toggle Database UI       | dadbob-ui     |
-| `n`                    | `<leader>ft` | Find Todo                | todo-comments |
-| `n`                    | `<leader>ff` | Find Files               | Telescope     |
-| `n`                    | `<leader>fF` | Find Files (Git Files)   | Telescope     |
-| `n`                    | `<leader>fb` | Find Buffer              | Telescope     |
-| `n`                    | `<leader>fg` | Live Grep                | Telescope     |
-| `n`                    | `<leader>fG` | Live Grep (Git Files)    | Telescope     |
-| `n`                    | `<leader>fw` | Find Current word        | Telescope     |
-| `n`                    | `<leader>fW` | Find Current WORD        | Telescope     |
-| `n`                    | `<leader>ht` | Help Tags                | Telescope     |
-| `n`                    | `<leader>hk` | Help Keymaps             | Telescope     |
-| `n` `i` (in telescope) | `<m-p>`      | Telescope Toggle Preview | Telescope     |
+| Mode                   | Keymap       | Description              | Plugin          |
+| ---------------------- | ------------ | ------------------------ | --------------- |
+| `n`                    | `<leader>te` | Toggle Explorer          | Nvim-Tree       |
+| `n`                    | `<leader>tu` | Toggle UndoTree          | UndoTree        |
+| `n`                    | `<leader>td` | Toggle Database UI       | dadbob-ui       |
+| `n`                    | `<leader>ts` | Toggle SymbolsOutline    | symbols-outline |
+| `n`                    | `<leader>ft` | Find Todo                | todo-comments   |
+| `n`                    | `<leader>ff` | Find Files               | Telescope       |
+| `n`                    | `<leader>fF` | Find Files (Git Files)   | Telescope       |
+| `n`                    | `<leader>fb` | Find Buffer              | Telescope       |
+| `n`                    | `<leader>fg` | Live Grep                | Telescope       |
+| `n`                    | `<leader>fG` | Live Grep (Git Files)    | Telescope       |
+| `n`                    | `<leader>fw` | Find Current word        | Telescope       |
+| `n`                    | `<leader>fW` | Find Current WORD        | Telescope       |
+| `n`                    | `<leader>ht` | Help Tags                | Telescope       |
+| `n`                    | `<leader>hk` | Help Keymaps             | Telescope       |
+| `n` `i` (in telescope) | `<m-p>`      | Telescope Toggle Preview | Telescope       |
 
 ## Navigation
 
