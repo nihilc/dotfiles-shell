@@ -194,6 +194,15 @@ return {
   },
   {
     "folke/zen-mode.nvim",
+    opts = {
+      window = {
+        width = 120,
+        height = 1,
+      },
+      plugins = {
+        tmux = { enabled = true }
+      },
+    },
     keys = {
       { "<leader>z", function() require("zen-mode").toggle() end, desc = "Toggle Zenmode" },
     }
