@@ -11,6 +11,7 @@ export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
 export PSQL_HISTORY="$XDG_DATA_HOME/psql_history"
 export PSQLRC="$XDG_CONFIG_HOME/pg/psqlrc"
 export SQLITE_HISTORY="$XDG_CACHE_HOME"/sqlite_history
+export MYSQL_HISTFILE="$XDG_DATA_HOME"/mysql_history
 # Path
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/usr/local/go/bin"
