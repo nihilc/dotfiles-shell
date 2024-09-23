@@ -11,7 +11,12 @@ alias lla="ls -lA"
 alias tree="tree -C --dirsfirst"
 alias rm="rm -i"
 
-alias bat="batcat"
+alias du="du -h"
+
+# For WSL
+alias init_docker="sudo /etc/init.d/docker"
+alias init_postgres="sudo /etc/init.d/postgresql"
+alias init_mariadb="sudo /etc/init.d/mariadb"
 
 # Fix paths
 alias wget="wget --hsts-file=$XDG_DATA_HOME/wget-hsts"
