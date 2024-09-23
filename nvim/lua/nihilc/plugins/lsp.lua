@@ -4,8 +4,13 @@ return {
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
     'WhoIsSethDaniel/mason-tool-installer.nvim',
+
+    -- Language specific
     'mfussenegger/nvim-jdtls',
-    'nanotee/sqls.nvim'
+    'nanotee/sqls.nvim',
+
+    -- Visual
+    "SmiteshP/nvim-navic",
   },
   config = function()
     vim.api.nvim_create_autocmd('LspAttach', {
@@ -39,6 +44,12 @@ return {
       vim.lsp.protocol.make_client_capabilities(),
       require("cmp_nvim_lsp").default_capabilities()
     )
+
+    local on_attach = function(client, bufnr)
+      if client.server_capabilities.documentSymbolProvider then
+        require("nvim-navic").attach(client, bufnr)
+      end
+    end
 
     local servers = {
       -- Web
@@ -108,6 +119,7 @@ return {
         function(server_name)
           local server = servers[server_name] or {}
           server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
+          server.on_attach = on_attach
           require('lspconfig')[server_name].setup(server)
         end,
       },
