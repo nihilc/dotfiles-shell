@@ -14,6 +14,7 @@
 | ---------------------- | ------------ | ------------------------ | ------------- |
 | `n`                    | `<leader>te` | Toggle Explorer          | Nvim-Tree     |
 | `n`                    | `<leader>tu` | Toggle UndoTree          | UndoTree      |
+| `n`                    | `<leader>td` | Toggle Database UI       | dadbob-ui     |
 | `n`                    | `<leader>ft` | Find Todo                | todo-comments |
 | `n`                    | `<leader>ff` | Find Files               | Telescope     |
 | `n`                    | `<leader>fF` | Find Files (Git Files)   | Telescope     |
@@ -168,6 +169,7 @@ Use the text objects like `v<keymap>`, `c<keymap>`, `d<keymap>`, Example to dele
 
 | Mode | Keymap        | Description                    | Plugin   |
 | ---- | ------------- | ------------------------------ | -------- |
+| `n`  | `<leader>z`   | Toggle Zenmode                 | zen-mode |
 | `n`  | `<leader>uw`  | UI Toggle wrap                 |          |
 | `n`  | `<leader>ul`  | UI Toggle list                 |          |
 | `n`  | `<leader>ugs` | UI Toggle Git sings            | Gitsigns |
