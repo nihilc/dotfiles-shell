@@ -192,4 +192,10 @@ return {
       vim.keymap.set("n", "<leader>p", require("harpoon.ui").nav_prev, { desc = "Harpoon Nav Prev" })
     end
   },
+  {
+    "folke/zen-mode.nvim",
+    keys = {
+      { "<leader>z", function() require("zen-mode").toggle() end, desc = "Toggle Zenmode" },
+    }
+  },
 }
