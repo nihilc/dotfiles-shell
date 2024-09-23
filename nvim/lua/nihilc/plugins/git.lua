@@ -1,28 +1,15 @@
 return {
   {
-    "tpope/vim-fugitive",
-    config = function()
-      vim.keymap.set("n", "<leader>gg", vim.cmd.Git, { desc = "Git fugitive" })
-
-      local augroup = vim.api.nvim_create_augroup
-      local autocmd = vim.api.nvim_create_autocmd
-      local group = augroup("TheNihilcPlugins", { clear = false })
-
-      autocmd("BufWinEnter", {
-        group = group,
-        pattern = "*",
-        callback = function()
-          if vim.bo.ft ~= "fugitive" then return end
-
-          local bufnr = vim.api.nvim_get_current_buf()
-
-          vim.keymap.set("n", "<leader>gp", function() vim.cmd.Git("push") end,
-            { buffer = bufnr, remap = false, desc = "Git push" })
-          vim.keymap.set("n", "<leader>gP", function() vim.cmd.Git("pull") end,
-            { buffer = bufnr, remap = false, desc = "Git pull" })
-        end,
-      })
-    end,
+    "NeogitOrg/neogit",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "sindrets/diffview.nvim",
+      "nvim-telescope/telescope.nvim",
+    },
+    config = true,
+    keys = {
+      { "<leader>gg", function() require("neogit").open({ kind = "split_below_all" }) end, desc = "Git Status" },
+    }
   },
   {
     "lewis6991/gitsigns.nvim",
