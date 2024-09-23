@@ -12,27 +12,12 @@
 	a = add
 	aa = add .
 
-	re = restore
-	res = restore --staged
-
-	br = branch
-	brd = branch -d
-
-	rm = remote
-
 	cm = commit -m
-
 	cma = commit --amend
 
-	co = checkout
-	cob = checkout -b
-
-	pretty = log --pretty=format:"%C(auto)%h%d\\ %s\\ %C(cyan)[%aN]"
-	l = pretty --graph
-	la = pretty --all --graph
-	ll = pretty --numstat
-	lla = pretty --all --numstat
-	last = log -1 --decorate --numstat
+	custom-log = log --pretty=format:"%C(auto)%h%d\\ %s\\ %C(cyan)[%aN]"
+	ls = custom-log --graph
+	la = custom-log --all --graph
 
 	show-config = !git config --global -l | sed -e 's/=/ = /' -e "/alias./d"
 	show-alias = !git config --global -l | grep alias | sed -e 's/=/ = /' -e 's/alias.//'
