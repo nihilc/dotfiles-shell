@@ -8,7 +8,7 @@ return {
     },
     config = true,
     keys = {
-      { "<leader>gg", function() require("neogit").open({ kind = "split_below_all" }) end, desc = "Git Status" },
+      { "<leader>gg", function() require("neogit").open({ kind = "tab" }) end, desc = "Git Status" },
     }
   },
   {
