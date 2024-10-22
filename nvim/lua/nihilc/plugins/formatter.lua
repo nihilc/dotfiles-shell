@@ -8,7 +8,7 @@ return {
       javascriptreact = { "prettier" },
       typescriptreact = { "prettier" },
       sh = { "shfmt" },
-      sql = { "sqlfmt" },
+      sql = { "pg_format" },
       python = { "black" },
       markdown = { "prettier" },
     },
